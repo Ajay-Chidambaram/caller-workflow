@@ -1,3 +1,16 @@
+name: Caller Workflow
+
+permissions:
+  contents: write
+  packages: write
+  pull-requests: write
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
 jobs:
   job:
     runs-on: ubuntu-latest
